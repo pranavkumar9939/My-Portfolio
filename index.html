@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav Kumar | AI & ML Student</title>
+    <meta name="description"
+        content="Portfolio of Pranav Kumar — 2nd Year B.Tech AI & Machine Learning student at Nalanda College of Engineering. Python developer and data science enthusiast.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BG -->
+    <div class="bg-mesh"></div>
+    <div class="bg-grid"></div>
+    <canvas id="neural-canvas"></canvas>
+
+
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <div class="nav-logo">
+            <div class="nav-logo-icon">PK</div>
+            Pranav Kumar
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleNav()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-inner">
+            <div class="hero-left">
+                <div class="hero-badge">
+                    <div class="badge-dot"></div>
+                    Open to Internship Opportunities
+                </div>
+                <h1 class="hero-name">
+                    Hi, I'm<br>
+                    <span class="hero-name-grad">Pranav Kumar</span>
+                </h1>
+                <div class="hero-role" id="typed-text"><span class="cursor">|</span></div>
+                <p class="hero-bio">
+                    2nd Year B.Tech student in AI & Machine Learning at Nalanda College of Engineering (CGPA 9.22).
+                    I build intelligent, data-driven systems — from loan approval prediction to exploring
+                    classification algorithms. Passionate about turning raw data into real-world impact.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="https://mail.google.com/mail/?view=cm&to=pranavvicky9939@gmail.com&su=Hi+Pranav+%E2%80%94+Let%27s+Connect&body=Hey+Pranav%2C%0A%0AI+saw+your+portfolio+and+would+love+to+get+in+touch!%0A%0A" target="_blank" class="btn-glass">Send Me Email</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-photo-wrap">
+                    <div class="hero-photo-ring">
+                        <img src="img.jpeg" alt="Pranav Kumar" id="hero-profile-photo">
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <div class="hcard-rows">
+                        <div class="hcard-row">
+                            <span class="hcard-label">🎓 Degree</span>
+                            <span class="hcard-val">B.Tech AI & ML</span>
+                        </div>
+                        <div class="hcard-row">
+                            <span class="hcard-label">📊 CGPA</span>
+                            <span class="hcard-val">9.22 / 10</span>
+                        </div>
+                        <div class="hcard-row">
+                            <span class="hcard-label">🏫 College</span>
+                            <span class="hcard-val">NCE Nalanda</span>
+                        </div>
+
+                        <div class="hcard-row">
+                            <span class="hcard-label">⚡ Status</span>
+                            <span class="hcard-val"><span class="status-badge">Available</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-band">
+        <div class="stats-inner">
+            <div class="stat-item reveal">
+                <div class="stat-num" data-target="9.22" data-decimal="true">0</div>
+                <div class="stat-lbl">CGPA out of 10</div>
+            </div>
+            <div class="stat-item reveal d1">
+                <div class="stat-num" data-target="10" data-suffix="+">0</div>
+                <div class="stat-lbl">Technical Skills</div>
+            </div>
+            <div class="stat-item reveal d2">
+                <div class="stat-num" data-target="8" data-suffix="+">0</div>
+                <div class="stat-lbl">ML Algorithms</div>
+            </div>
+            <div class="stat-item reveal d3">
+                <div class="stat-num no-grad">2nd</div>
+                <div class="stat-lbl">Year B.Tech</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section-alt">
+        <div class="sec-inner">
+            <div class="sec-header">
+                <div class="sec-header-row">
+                    <div>
+                        <div class="eyebrow">Technical Skills</div>
+                        <h2 class="sec-title">What I Work With</h2>
+                        <p class="sec-sub">Languages, frameworks, algorithms and tools I use to build AI-powered
+                            solutions.</p>
+                    </div>
+                    <div class="sec-count">8 categories</div>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon">💻</div>
+                        <div class="skill-card-title">Languages</div>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">C</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card reveal d1">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon">🧠</div>
+                        <div class="skill-card-title">Machine Learning</div>
+                        <div class="tags">
+                            <span class="tag">Supervised</span>
+                            <span class="tag">Unsupervised</span>
+                            <span class="tag">Feature Eng.</span>
+                            <span class="tag">Model Selection</span>
+                            <span class="tag">Evaluation</span>
+                            <span class="tag">Cross Validation</span>
+                            <span class="tag">Hyperparameter Tuning</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card reveal d2">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon">⚙️</div>
+                        <div class="skill-card-title">ML Algorithms</div>
+                        <div class="tags">
+                            <span class="tag">Linear Reg.</span>
+                            <span class="tag">Logistic Reg.</span>
+                            <span class="tag">Decision Trees</span>
+                            <span class="tag">Random Forest</span>
+                            <span class="tag">SVM</span>
+                            <span class="tag">KNN</span>
+                            <span class="tag">Naive Bayes</span>
+                            <span class="tag">K-Means</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card reveal d3">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon">📊</div>
+                        <div class="skill-card-title">Data Analysis</div>
+                        <div class="tags">
+                            <span class="tag">Data Cleaning</span>
+                            <span class="tag">Preprocessing</span>
+                            <span class="tag">EDA</span>
+                            <span class="tag">Visualization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card reveal d4">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon">📦</div>
+                        <div class="skill-card-title">Libraries</div>
+                        <div class="tags">
+                            <span class="tag">NumPy</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Seaborn</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card reveal d5">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon">🌐</div>
+                        <div class="skill-card-title">Web Dev</div>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Flask</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card reveal d6">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon">🗃️</div>
+                        <div class="skill-card-title">Databases</div>
+                        <div class="tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card reveal d7">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon">🛠️</div>
+                        <div class="skill-card-title">Tools</div>
+                        <div class="tags">
+                            <span class="tag">Git</span>
+                            <span class="tag">GitHub</span>
+                            <span class="tag">Jupyter</span>
+                            <span class="tag">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="sec-inner">
+            <div class="sec-header">
+                <div class="sec-header-row">
+                    <div>
+                        <div class="eyebrow">Projects</div>
+                        <h2 class="sec-title">What I've Built</h2>
+                        <p class="sec-sub">End-to-end ML projects from data exploration to trained prediction models.
+                        </p>
+                    </div>
+                    <div class="sec-count">2 projects</div>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="proj-content">
+                        <div class="proj-meta">
+                            <span class="proj-year">2026</span>
+                            <span class="proj-type">AutoML</span>
+                            <span class="proj-type"
+                                style="background: rgba(255, 152, 0, 0.1); color: #ff9800; border-color: rgba(255,152,0,0.2);">In
+                                Progress</span>
+                        </div>
+                        <h3 class="proj-title">MLForge - Automated Machine Learning Platform</h3>
+                        <p class="proj-desc">
+                            Built an end-to-end AutoML platform that automatically analyzes datasets, detects problem
+                            types, and trains models. Implemented automated preprocessing pipelines, integrated multiple
+                            ML algorithms, and developed a model evaluation engine. Created a model versioning system
+                            and designed an interactive analytics dashboard using React.
+                        </p>
+                        <div class="proj-techs">
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">FastAPI</span>
+                            <span class="tech-chip">React</span>
+                            <span class="tech-chip">Scikit-Learn</span>
+                            <span class="tech-chip">NumPy</span>
+                            <span class="tech-chip">Pandas</span>
+                        </div>
+                        <a href="https://github.com/pranavkumar9939/MLForge" target="_blank" class="proj-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                            View Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal d1">
+                    <div class="proj-content">
+                        <div class="proj-meta">
+                            <span class="proj-year">2026</span>
+                            <span class="proj-type">Classification</span>
+                            <span class="proj-type">ML</span>
+                        </div>
+                        <h3 class="proj-title">Credit Wise Loan System</h3>
+                        <p class="proj-desc">
+                            A machine learning-based loan approval prediction system built with Python and Scikit-learn.
+                            Performed data preprocessing, feature engineering, and EDA. Trained and evaluated
+                            classification models using applicant income, savings, collateral value, loan amount,
+                            DTI ratio, and credit score as features.
+                        </p>
+                        <div class="proj-techs">
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">Scikit-learn</span>
+                            <span class="tech-chip">Pandas</span>
+                            <span class="tech-chip">NumPy</span>
+                            <span class="tech-chip">Matplotlib</span>
+                            <span class="tech-chip">Seaborn</span>
+                        </div>
+                        <a href="#" class="proj-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                            View Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card proj-placeholder reveal d2">
+                    <div class="proj-content">
+                        <div style="font-size:2.2rem; margin-bottom:0.6rem;">🚧</div>
+                        <div class="proj-title" style="font-size:1rem; margin-bottom:0.35rem;">More Coming Soon</div>
+                        <p class="proj-desc" style="font-size:0.8rem; margin-bottom:0;">
+                            Currently working on new ML experiments — building in public.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section-alt">
+        <div class="sec-inner">
+            <div class="sec-header">
+                <div class="eyebrow">Education</div>
+                <h2 class="sec-title">Academic Background</h2>
+                <p class="sec-sub">My foundation in AI & Machine Learning, built in Bihar.</p>
+            </div>
+
+            <div class="edu-timeline">
+                <div class="edu-item reveal">
+                    <div class="edu-dot"></div>
+                    <div class="edu-card">
+                        <div class="edu-year-badge">2024 – Present</div>
+                        <div class="edu-degree">B.Tech in Artificial Intelligence & Machine Learning</div>
+                        <div class="edu-inst">Nalanda College of Engineering · Nalanda, Bihar</div>
+                        <span class="grade-pill">⭐ CGPA: 9.22 / 10</span>
+                    </div>
+                </div>
+                <div class="edu-item reveal d1">
+                    <div class="edu-dot"></div>
+                    <div class="edu-card">
+                        <div class="edu-year-badge">2024</div>
+                        <div class="edu-degree">Intermediate — Class XII</div>
+                        <div class="edu-inst">A.N.D. College · Samastipur, Bihar</div>
+                        <span class="grade-pill teal">🎯 85.4%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="sec-inner">
+            <div class="sec-header">
+                <div class="eyebrow">Contact</div>
+                <h2 class="sec-title">Get In Touch</h2>
+                <p class="sec-sub">Open to internships, collaborations, and conversations about AI & ML.</p>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-list">
+                    <a href="mailto:pranavvicky9939@gmail.com" target="_blank" class="clink reveal"
+                        onclick="navigator.clipboard.writeText('pranavvicky9939@gmail.com'); alert('Email copied to clipboard!');">
+                        <div class="clink-icon">📧</div>
+                        <div>
+                            <div class="clink-label">Email</div>
+                            <div class="clink-val">pranavvicky9939@gmail.com</div>
+                        </div>
+                    </a>
+                    <a href="tel:+919939601344" class="clink reveal d1">
+                        <div class="clink-icon">📱</div>
+                        <div>
+                            <div class="clink-label">Phone</div>
+                            <div class="clink-val">+91 99396 01344</div>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pranav-kumar-57a000328/" target="_blank" class="clink reveal d2">
+                        <div class="clink-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#0A66C2">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="clink-label">LinkedIn</div>
+                            <div class="clink-val">linkedin.com/in/pranav-kumar-57a000328</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/pranavkumar9939" target="_blank" class="clink reveal d3">
+                        <div class="clink-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="clink-label">GitHub</div>
+                            <div class="clink-val">github.com/pranavkumar9939</div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="cta-box reveal d2">
+                    <div class="cta-emoji">🤝</div>
+                    <div class="cta-title">Looking for an Intern?</div>
+                    <p class="cta-body">
+                        I'm a 2nd year B.Tech AI & ML student actively seeking internships in AI/ML, Data Science,
+                        and Python development. Strong academic record, fast learner, and eager to build real-world
+                        systems.
+                    </p>
+                    <a href="https://mail.google.com/mail/?view=cm&to=pranavvicky9939@gmail.com&su=Hi+Pranav+%E2%80%94+Let%27s+Connect&body=Hey+Pranav%2C%0A%0AI+saw+your+portfolio+and+would+love+to+get+in+touch!%0A%0A" target="_blank" class="btn-glass">Send Me Email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-links">
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p>Built by <strong>Pranav Kumar</strong> · 2nd Year B.Tech AI & ML · Nalanda College of Engineering · 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
